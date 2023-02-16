@@ -10,9 +10,9 @@ public class Main {
         System.out.println("Hello world!");
         File dir = null;
         int random = (int) (Math.random() * 2);
-        //if(random == 0) {
-        //    dir = new File("test");
-        //}
+        if(random == 0) {
+            dir = new File("test");
+        }
         createDir(dir);
         System.out.printf("random = %d", random);
     }
