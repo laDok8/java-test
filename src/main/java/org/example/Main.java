@@ -2,10 +2,15 @@ package org.example;
 //import groovy.util.logging.Log4j;
 
 import java.io.File;
+import java.io.Serializable;
 
 public class Main {
-    public static void main(String[] args) {
 
+
+    public static void another_maybe(Serializable x) {
+        System.out.println(x.toString());
+    }
+    public static void main(String[] args) {
 
         System.out.println("Hello world!");
         File dir = null;
@@ -18,6 +23,8 @@ public class Main {
         printSomething();
 
         another_fail(null);
+        another_maybe("test");
+        another_maybe(null);
     }
 
     public static void printSomething() {
