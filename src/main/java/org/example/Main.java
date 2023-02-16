@@ -14,12 +14,13 @@ public class Main {
             dir = new File("test");
         }
         createDir(dir);
+        System.out.printf("random = %d", random);
     }
 
 
     public static void createDir(File dir) {
-        //if (dir != null || !dir.exists()) // BAD
-        if (dir != null && !dir.exists()) // GOOD
+        if (dir != null || !dir.exists()) // BAD
+        //if (dir != null && !dir.exists()) // GOOD
             dir.mkdir();
     }
 }
