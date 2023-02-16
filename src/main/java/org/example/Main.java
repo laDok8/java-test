@@ -15,6 +15,11 @@ public class Main {
         }
         createDir(dir);
         System.out.printf("random = %d", random);
+        printSomething();
+    }
+
+    public static void printSomething() {
+        System.out.println("Something");
     }
 
 
